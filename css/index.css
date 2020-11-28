@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Jua&display=swap');
+
+html { overflow-x: hidden; }
+
+
+/* 스킵 메뉴 */
+
+#skip { position: relative; }
+#skip a { position: absolute; left:0; top:-40px;  width:140px; border:1px solid #fff; bolod:#fff; text-align: center; 
+background:#333; color:#fff; z-index:4;}
+#skip a:active,
+#skip a:focus { top:0; }
+
+
+/* 레이아웃 */
+
+#main { background:url(../img/pilly_main.png) no-repeat center; background-size:cover; width:100%; 
+height:970px; position:relative; }
+
+/* 메인 */
+
+#main .main_wrap { width:1200px; margin:0 auto; }
+
+.header { position:fixed; top:0; left:0; right:0;  background:#f6cbc2; width:100%; z-index:1; height:72px; } 
+.header .header_wrap { width:1200px; margin:0 auto; height:72px; }
+.header .header_wrap h1 { float:left; width:63px; margin:20px 0 11px 0; }
+.header .header_wrap ul { float:right; margin:22px 0; } 
+.header .header_wrap ul li { float:left; margin-right:15px; }
+.header .header_wrap ul li i.xi-2x { font-size:1.5em; }
+
+
+#main .main_wrap .main_h2 { text-align:center; padding-top:140px; box-sizing:border-box; }
+#main .main_wrap .main_h2 span { display: block; text-align: center; font-size: 39px; color:#444; 
+    font-family: 'Jua', sans-serif; animation-fill-mode: forwards; }
+
+#main .main_wrap .main_h2 h2 { font-size:73px;  font-family: 'Balsamiq Sans', cursive; color:#f1574b; 
+    opacity:0; margin-top:-80px; }
+
+#main .survey_button { width:155px; position:absolute; right:53px; bottom:197px; z-index:1; }
+
+
+/* 두번째 섹션 */
+
+#section2 .s2_wrap { width:1200px; margin:0 auto; }
+#section2 .s2_wrap h2 { text-align: center; font-size:40px; font-family: 'Jua', sans-serif; color:#f1574b; 
+padding-top:172px; box-sizing:border-box; display:block; }
+#section2 .s2_wrap p { font-family: 'Jua', sans-serif; color:#444; font-size:30px; margin:28px 0 60px 0; 
+text-align: center; }
+
+#section2 { background:#fafafa; height:909px; }
+#section2 .s2_wrap ul { overflow:hidden; width:100%; }
+#section2 .s2_wrap ul li { width:32%; float:left; background:#fff; margin-right:1.7%; text-align: center; 
+border-radius:9px; box-shadow: 3px 3px 3px rgba(0,0,0,.1); } 
+#section2 .s2_wrap ul li:last-child { margin-right:0; }
+#section2 .s2_wrap ul li a { display: block; text-align: center; }
+#section2 .s2_wrap ul li:hover {background:#f6cbc2; transition:all 0.7s; }
+#section2 .s2_wrap ul li a img { width:135px; padding:62px 0 45px 0; }
+#section2 .s2_wrap ul li a h3 { display: block; color:#444; font-size:32px; font-family: 'Jua', sans-serif; }
+#section2 .s2_wrap ul li a p { display: block; color:#444; font-size:20px; font-family: 'Jua', sans-serif; 
+line-height:100%; }
+
+
+
+
+/* 미디어쿼리 */
+
+@media (max-width:1200px){
+    
+    #main .main_wrap { width:100%; }
+    .header .header_wrap { width:100%; padding:0 15px; box-sizing: border-box; }
+    #main { height:800px; }
+    #section2 .s2_wrap { width:100%; padding:0 20px; box-sizing: border-box; }
+    #main .survey_button { bottom:357px; right:22px; }
+    #section2 .s2_wrap h2 { padding-top:100px; }
+    
+}
+
+
+@media (max-width:1000px){
+    
+     #main { height:650px; }
+    #main .main_wrap .main_h2 { padding-top:100px; }
+    #main .main_wrap .main_h2 span { font-size:32px; }
+    #main .main_wrap .main_h2 h2 { font-size:63px; }
+    #main .survey_button { width:135px; bottom:287px; }
+    
+}
+
+
+@media (max-width:768px){
+    
+    #main { height:500px; }
+    #main .survey_button { display: none; }
+    #section2 .s2_wrap ul li a img { padding: 38px 0 22px 0; }
+    #section2 .s2_wrap h2 { padding-top: 80px }
+    #section2 .s2_wrap ul li a h3 { font-size:27px; }
+    #section2 .s2_wrap ul li a p { font-size:17px; }
+    #section2 .s2_wrap p { font-size:27px; margin:20px 0 43px 0; }
+}
+
+
+@media (max-width:630px){
+    #section2 .s2_wrap ul li { width:100%; }
+
+}
+
+
+
+@media (max-width:500px){
+    
+    #main .main_wrap .main_h2 span { font-size:27px; }
+        #main { height:440px; }
+    
+    
+}
+
+
+@media (max-width:420px){
+    
+    #main .main_wrap .main_h2 { padding-top:130px; }
+    #main .main_wrap .main_h2 span { font-size:22px; margin-top:-17px; }
+    #main .main_wrap .main_h2 h2 { font-size:43px; }
+
+    
+}
+
+
+@media (max-width:340px){
+    
+    #main .main_wrap .main_h2 span { font-size:18px }
+    #main .main_wrap .main_h2 h2 { font-size:38px; }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 메인 h2 애니메이션 */
+
+.animated1 {     animation: fadein 3.5s;
+    -moz-animation: fadein 3.5s;
+    -webkit-animation: fadein 3.5s;
+    -o-animation: fadein 3.5s;
+    animation-fill-mode: forwards; }
+
+.animated2 {     animation: fadein2 3.5s;
+    -moz-animation: fadein2 3.5s;
+    -webkit-animation: fadein2 3.5s;
+    -o-animation: fadein2 3.5s;
+    animation-delay: 3.5s; 
+animation-fill-mode: forwards; }
+
+
+@keyframes fadein {
+    0% { opacity:0; display: block; }
+    50% { opacity:1; }
+    99% { display: block; }
+    100% { opacity:0; display: none; }
+}
+
+@keyframes fadein2 { 
+    0% { opacity: 0;}
+    100% { opacity: 1; }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
